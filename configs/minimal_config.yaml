@@ -1,0 +1,18 @@
+# Minimal YoloFlow Configuration
+# Only specify what you need to change - all other values use sensible defaults
+
+model:
+  name: yolo26n.pt
+
+dataset:
+  path: your_dataset/dataset.yaml
+  imgsz: 640
+
+hyperparameters:
+  epochs: 100
+  batch: 16
+  device: "0"
+
+experiment:
+  project: runs/train
+  name: my_experiment
