@@ -16,22 +16,12 @@ Production-ready YOLO training pipeline for custom datasets with support for loc
 
 ### Basic Installation
 
-```bash
-pip install yoloflow
-```
-
 ### Development Installation
 
 ```bash
 git clone https://github.com/yourusername/yoloflow.git
 cd yoloflow
 pip install -e ".[dev]"
-```
-
-### With Cloud Support (Future)
-
-```bash
-pip install "yoloflow[cloud]"
 ```
 
 ## Quick Start
