@@ -25,7 +25,7 @@ class ModelConfig:
 class DatasetConfig:
     """Dataset configuration."""
 
-    path: str = "yolo_cac_dataset_quadrants/dataset.yaml"
+    path: str = "dataset.yaml"
     imgsz: int = 640
     cache: Literal["True", "False", "disk", "ram"] = "False"
     fraction: float = 1.0

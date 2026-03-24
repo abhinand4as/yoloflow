@@ -33,7 +33,7 @@ def parse_legacy_args():
     # Original arguments from train.py
     parser.add_argument("--config", type=str, default=None)
     parser.add_argument("--model", type=str, default="yolo26n.pt")
-    parser.add_argument("--data", type=str, default="yolo_cac_dataset_quadrants/dataset.yaml")
+    parser.add_argument("--data", type=str, default="dataset.yaml")
     parser.add_argument("--epochs", type=int, default=100)
     parser.add_argument("--batch", type=int, default=16)
     parser.add_argument("--imgsz", type=int, default=640)
@@ -66,7 +66,7 @@ def parse_legacy_args():
     parser.add_argument("--amp", type=bool, default=True)
     parser.add_argument("--fraction", type=float, default=1.0)
     parser.add_argument("--project", type=str, default="runs/train")
-    parser.add_argument("--name", type=str, default="yolo26_cac_quadrants")
+    parser.add_argument("--name", type=str, default="experiment_name_01")
     parser.add_argument("--exist-ok", action="store_true")
     parser.add_argument("--resume", type=str, default=None)
     parser.add_argument("--seed", type=int, default=0)

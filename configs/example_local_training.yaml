@@ -7,7 +7,7 @@ model:
   dropout: 0.0              # Dropout rate
 
 dataset:
-  path: yolo_cac_dataset_quadrants/dataset.yaml  # Path to dataset YAML
+  path: dataset.yaml  # Path to dataset YAML
   imgsz: 640                # Input image size
   cache: "False"            # Cache images: "False", "True", "disk", or "ram"
   fraction: 1.0             # Dataset fraction to use (0.0 to 1.0)
@@ -54,7 +54,7 @@ augmentation:
 
 experiment:
   project: runs/train                    # Project directory for saving results
-  name: yolo26_cac_quadrants            # Experiment name
+  name: experiment_name_01            # Experiment name
   exist_ok: false                        # Overwrite existing experiment directory
   resume: null                          # Resume from checkpoint path (null to disable)
   verbose: true                         # Verbose logging
