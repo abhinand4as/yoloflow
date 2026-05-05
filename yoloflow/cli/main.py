@@ -92,6 +92,10 @@ def handle_train(args) -> int:
         logger.info(f"Loading configuration from: {config_path}")
         config = TrainingConfig.from_yaml(config_path)
 
+        # Resolve project path relative to CWD where train was invoked
+        if not Path(config.experiment.project).is_absolute():
+            config.experiment.project = str(Path.cwd() / config.experiment.project)
+
         # Validate configuration
         is_valid, errors = validate_config(config)
         if not is_valid:
